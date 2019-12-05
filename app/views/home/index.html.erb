@@ -1,0 +1,6 @@
+<h1>List of Articles</h1>
+<p>All of the titles withe their descriptions below:</p>
+
+<% @edutechional_resty.posts.each do |post| %>
+     <li><%= "Title: #{post['title']} | Description: #{post['description']}" %></li>
+<% end %>
